@@ -112,6 +112,7 @@ footer{
 }
 
 .footer{
+    /* width: 100%; */
     height: 254px;
 }
 
@@ -139,23 +140,22 @@ footer{
 ------------------- */
  @media only screen and (max-width:688px){
      nav{
-        display: static;
+        
      }
 
-     /* .header-one{
-         flex-grow: 1;
-     } */
-
-    
-
-    .container {
+     
+    .container, .footer{
         width: 100%;
     }
     .players{
         grid-template-columns: repeat(1, 1fr);
     }
-    .players{
+    .players, .footer{
         flex-direction: column;
         align-items: center;
+    }
+
+    footer{
+        
     }
 }
